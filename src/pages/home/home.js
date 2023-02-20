@@ -15,7 +15,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:3003/api/book/")
+      .get("https://libraryproject-6om4.onrender.com/api/book/")
       .then((response) => {
         if (response.status === 200) {
           this.setState({
